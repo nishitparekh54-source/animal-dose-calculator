@@ -1,10 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <title>Animal Dose Calculator</title>
-        <p>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Animal Dose Calculator</h1>
+
+    <p>
         <label>Human Dose (mg for 60 kg):</label><br>
         <input type="number" id="humanDose" placeholder="e.g. 500">
     </p>
@@ -21,18 +29,17 @@
             <option value="mouse">Mouse</option>
         </select>
     </p>
-</head>
-<body>
-<div class="container">
-    <h1>Animal Dose Calculator</h1>
+
     <button onclick="calculateDose()">Calculate Dose</button>
 
-    <h3>Result</h3>
-    <p id="result">Enter values and click Calculate.</p>
+    <div id="resultBox">
+        <h3>Result</h3>
+        <p id="result">Enter values and click Calculate.</p>
     </div>
-<script src="script.js?v=4"></script>
-    <script src="script.js"></script>
-<script src="script.js?v=2"></script>
-</script>
+
+</div>
+
+<script src="script.js?v=5"></script>
+
 </body>
 </html>
